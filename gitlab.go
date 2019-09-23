@@ -473,6 +473,7 @@ func newClient(httpClient *http.Client) *Client {
 	c.GroupMembers = &GroupMembersService{client: c}
 	c.GroupMilestones = &GroupMilestonesService{client: c}
 	c.GroupVariables = &GroupVariablesService{client: c}
+	c.GroupCluster = &GroupClustersService{client: c}
 	c.Groups = &GroupsService{client: c}
 	c.IssueLinks = &IssueLinksService{client: c}
 	c.Issues = &IssuesService{client: c, timeStats: timeStats}
